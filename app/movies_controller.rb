@@ -48,11 +48,11 @@ def can_get_the_last_item_in_the_database
 end
 
 def can_get_size_of_the_database
-  binding.pry
+  return Movie.all.size
 end
 
 def can_find_the_first_item_from_the_database_using_id
-  __
+  return Movie.find_by(id: 1).title
 end
 
 def can_find_by_multiple_attributes
