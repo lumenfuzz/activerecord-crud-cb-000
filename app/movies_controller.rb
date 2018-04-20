@@ -23,6 +23,7 @@ def can_be_created_with_a_hash_of_attributes
   attributes.each do |key, value|
     movie[key] = value
   end
+  binding.pry
   return movie
 end
 
