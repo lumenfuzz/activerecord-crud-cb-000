@@ -44,7 +44,7 @@ def can_get_the_first_item_in_the_database
 end
 
 def can_get_the_last_item_in_the_database
-  __
+  return Movie.find_by(id: Movie.last.id).title
 end
 
 def can_get_size_of_the_database
