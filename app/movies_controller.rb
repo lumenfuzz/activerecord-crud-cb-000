@@ -21,6 +21,7 @@ def can_be_created_with_a_hash_of_attributes
   }
   movie = Movie.new
   attributes.each do |key, value|
+    binding.pry
     movie[key] = value
   end
 end
