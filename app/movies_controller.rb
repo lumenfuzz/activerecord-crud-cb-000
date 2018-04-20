@@ -90,7 +90,7 @@ def can_update_multiple_items_at_once
   end
   hash = {}
   Movie.all.each do |movie|
-    hash[movie.id] = title: "A Movie"
+    hash[movie.id] = {title: "A Movie"}
   end
   Movie.update(hash.keys, hash.values)
 end
