@@ -24,7 +24,6 @@ def can_be_created_with_a_hash_of_attributes
     movie[key] = value
   end
   movie.save
-  binding.pry
   return movie
 end
 
